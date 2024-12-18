@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<!--current-->
 <head>
     <title>Winganna Farmstay Bathurst</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Bathurst,Farmstays,Holidays,Winganna">
     <meta name="description" content="Winganna Farm is a 50 acre property near Bathurst NSW. Built in 1854 this 3brm secluded cottage on our farm stay is where you can enjoy the peacefulness of the country with all the comforts of the modern day and only 20min from Bathurst city center.">
     <link rel="icon" type="image/x-icon" href="IMG_0069.JPG">
@@ -12,30 +13,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <h3 class="inline">Winganna Farm</h3>
-    <b>
-    <a class="inline"><u>Home</u></a>
-    </b>
-    <div class="dropdown">
-      <span>contact</span>
-      <div class="dropdown-content">
-        <a href="mailto:info@winganna.com.au" class="con">Email</a>
-        <a href="https://www.facebook.com/people/Winganna/100083041336629/" class="con">Facebook</a>
-      </div>
+  <div class="nav-wrapper">
+    <div class="logo-container">
+        <img class="logo" src="IMG_0069.JPG" alt="Logo"><br>
+        <h6 style="padding-left: 20px; font-size: 25px;">Winganna Farm</h6>
     </div>
-    <a href="animals.html" id="notcurrent">Animals</a>
-    <a href="summer.html" id="notcurrent">Winter In Bathurst</a>
-    <a href="cottage.html" id="notcurrent">View Cottage</a>
-    <button onclick="window.location.href = 'https://bookdirect.prenohq.com/inst/#home?propertyId=383IjUezalwY5SlFgDJICu6VHyNTc3NiI=&JDRN=Y';">Book Now</button>
-  </nav>
+    <nav>
+        <input class="hidden" type="checkbox" id="menuToggle">
+        <label class="menu-btn" for="menuToggle">
+            <div class="menu"></div>
+            <div class="menu"></div>
+            <div class="menu"></div>
+        </label>
+        <div class="nav-container">
+            <ul class="nav-tabs">
+                <li class="nav-tab">Home</li>
+                <a href="summer.html"><li class="nav-tab">Summer In Bathurst</a></li></a>
+                <a href="animals.html"><li class="nav-tab">Our Animals</li></a>
+                <a href="gal.html"><li class="nav-tab">Photo Gallery</li></a>
+                <a href="cottage.html"><li class="nav-tab">Wadella Cottage</li></a>
+                <button  style="width: 150px; height: 5px;" class="button-28" role="button" onclick="window.location.href = 'https://bookdirect.prenohq.com/inst/#home?propertyId=383IjUezalwY5SlFgDJICu6VHyNTc3NiI=&JDRN=Y';">Book Now</button>
+            </ul>
+        </div>
+    </nav>
+</div>
   <section class="top">
     <h1>Winganna Farm Stay</h1>
     <img src="white-down-arrow-icon-7.jpg" class="down">
   </section>
   <section class="display" id="section2">
     <div class="vid">
-      <iframe width="986" height="657" src="https://www.youtube.com/embed/U5G24yJZW2A" title="Come and explore Winganna Farm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 700px; height: 400px;"></iframe>
+      <iframe width="986" height="657" src="https://www.youtube.com/embed/U5G24yJZW2A" title="Come and explore Winganna Farm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 700px; height: 400px; text-align: center; max-width: 100%;"></iframe>
     </div>
     <div class="minigal">
       <h4>Gallery</h4>
@@ -45,7 +53,10 @@
       <img src="IMG_0265.JPG" class="gal3">
       <img src="IMG_0282.JPG" class="gal4">
       <br>
-      <p>View Full Gallery</p>
+      <p class="viewgal"><a href="gal.html">View Full Gallery</a></p>
+      <br>
+      <br>
+      <br>
     </div>
   </section>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
