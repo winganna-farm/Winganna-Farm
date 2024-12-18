@@ -1,156 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Winter In The Central West | Winganna Farm</title>
+        <title>Summer In Bathurst | Winganna Farm</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="IMG_0069.JPG">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="slide.css">
+
       </head>
-    <body style="background-image: url(bluehouse.webp); background-size: cover;">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Winganna Farm</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Contact
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100083041336629">Facebook</a>
-                      <a class="dropdown-item" href="mailto:info@winganna.com.au">Email</a>
-                    </div>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="animals.html">Animals</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="summer.html">Winter In Bathurst <span class="sr-only">(current)</span></a>
-                </li>
-                <li  class="nav-item">
-                  <a class="nav-link" href="cottage.html">View Cottage</a>
-                </li>
-                <li class="nav-item" style="padding-left: 600px;">
-                  <button type="button" class="btn btn-primary" onclick="window.location.href = 'https://bookdirect.prenohq.com/inst/#home?propertyId=383IjUezalwY5SlFgDJICu6VHyNTc3NiI=&JDRN=Y';">Book Now</button>
-                </li>
-              </ul>
+    <body>
+      <div class="nav-wrapper">
+        <div class="logo-container">
+            <img class="logo" src="IMG_0069.JPG" alt="Logo"><br>
+            <h6 style="padding-left: 20px; font-size: 25px;">Winganna Farm</h6>
+        </div>
+        <nav>
+            <input class="hidden" type="checkbox" id="menuToggle">
+            <label class="menu-btn" for="menuToggle">
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </label>
+            <div class="nav-container">
+                <ul class="nav-tabs">
+                    <a href="index.html"><li class="nav-tab">Home</li></a>
+                    <li class="nav-tab">Summer In Bathurst</li>
+                    <a href="animals.html"><li class="nav-tab">Our Animals</li></a>
+                    <a href="gal.html"><li class="nav-tab">Photo Gallery</li></a>
+                    <a href="cottage.html"><li class="nav-tab">Wadella Cottage</li></a>
+                    <button  style="width: 150px; height: 5px;" class="button-28" role="button" onclick="window.location.href = 'https://bookdirect.prenohq.com/inst/#home?propertyId=383IjUezalwY5SlFgDJICu6VHyNTc3NiI=&JDRN=Y';">Book Now</button>
+                </ul>
             </div>
-          </nav>
-          <hr>
-          <hr>
-          <h2 style="color: rgb(255, 255, 255); text-align: center;">Winter In Bathurst</h2>
-          <hr>
-          <hr>
-          <div style="margin-left: 50px; margin-right: 50px;">
-          <!--Start-->
+        </nav>
+    </div>
+          <section class="top">
+            <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 120px; text-align: center; color: #fff; padding-top: 90px; padding-bottom: 100px;">Summer In Bathurst</h1>
+          </section>
+          <br>
+          <br>
+          <div>
           <div class="row">
-            <div class="col-sm-6">
-              <div class="card" style="margin-bottom: 10px;">
-                <div class="card-body">
-                  <h5 class="card-title"> Visit The Bathurst Winter Festival</h5>
-                  <p class="card-text">6 - 21 July</p>
-                  <a href="https://www.bathurstwinterfestival.com.au/Home" class="btn btn-primary">Visit Site</a>
-                </div>
-              </div>
+            <div class="column">
+              <div class="card"><b><h5>Visit Bathurst Aquatic Center</h5></b><p>Open 6am-8pm</p><u><a href="https://www.bathurstaquatic.com.au/"> Visit Website</a></u></div>
             </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Visit Abecrombie National Park</h5>
-                  <p class="card-text">Open Every Day 7am - 7pm</p>
-                  <a href="https://www.nationalparks.nsw.gov.au/visit-a-park/parks/abercrombie-river-national-park" class="btn btn-primary">Visit Site</a>
-                </div>
-              </div>
+            <div class="column">
+              <div class="card"><b><h5>Visit The Bathurst Museums</h5></b><p>Each Museum Is Different So Please Check The Website</p><u><a href="https://museumsbathurst.com.au/"> Visit Website</a></u></div>
+            </div>
+            <div class="column">
+              <div class="card"><b><h5>Visit History Hill</h5></b><p>Weekends and School Holidays 10am - 3pm, please visit Website for weekday visits.</p><u><a href="https://www.historyhill.com.au/"> Visit Website</a></u></div>
+            </div>
+            <div class="column">
+              <div class="card"><b><h5>Go Gold Panning</h5></b><p>Bookings May Be Required</p><u><a href="https://www.facebook.com/TheHillendGoldHunters/"> Visit Website</a></u></div>
             </div>
           </div>
+          <br>
+          <br>
           <div class="row">
-            <div class="col-sm-6">
-              <div class="card" style="margin-bottom: 10px;">
-                <div class="card-body">
-                  <h5 class="card-title">Visit Mayfield Gardens</h5>
-                  <p class="card-text">Open Every Day 9am - 4:30pm</p>
-                  <a href="https://mayfieldgarden.com.au/" class="btn btn-primary">Visit Site</a>
-                </div>
-              </div>
+            <div class="column">
+              <div class="card"><b><h5>Visit Annies Ice Cream</h5></b><p>Please Check Website For Opening Hours </p><u><a href="https://www.facebook.com/anniesbathurst/"> Visit Website</a></u></div>
             </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Visit Museums</h5>
-                  <p class="card-text">Please Visit Site For Opening Hours.</p>
-                  <a href="https://museumsbathurst.com.au/" class="btn btn-primary">Visit Site</a>
-                </div>
-              </div>
+            <div class="column">
+              <div class="card"><b><h5>Visit Mayfield Gardens</h5></b><p>9am-4:30pm</p><u><a href="https://mayfieldgarden.com.au/the-gardens"> Visit Website</a></u></div>
+            </div>
+            <div class="column">
+              <div class="card"><b><h5>Drive Around Mount Panorama</h5></b><u><a href="https://www.bathurst.nsw.gov.au/Services/Facilities/Mount-Panorama"> Visit Website</a></u></div>
+            </div>
+            <div class="column">
+              <div class="card"><b><h5>Explore Surrounding Villiages</h5></b><u><a href="https://www.bathurstregion.com.au/bathurst-region-villages/"> Visit Website</a></u></div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="card" style="margin-bottom: 10px;">
-                <div class="card-body">
-                  <h5 class="card-title">Visit Abecrombie House</h5>
-                  <p class="card-text">Please Visit Site For Opening Hours.</p>
-                  <a href="https://www.abercrombiehouse.com.au/ " class="btn btn-primary">Visit Site</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Visit History Hill</h5>
-                  <p class="card-text">Weekends and School Holidays 10am - 3pm, please visit site for weekday visits.</p>
-                  <a href="https://www.historyhill.com.au/" class="btn btn-primary">Visit Site</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="card" style="margin-bottom: 10px;">
-                <div class="card-body">
-                  <h5 class="card-title">Eat At The Rockley Pub</h5>
-                  <p class="card-text">Wednesday - Saturday 12pm - Late, Sunday 12pm - 6pm</p>
-                  <a href="https://www.therockleypub.com.au/" class="btn btn-primary">Visit Site</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Visit Bathurst Grange Distillery</h5>
-                  <p class="card-text">Please visit site for opening hours.</p>
-                  <a href="https://www.bathurstgrange.com.au/" class="btn btn-primary">Visit Site</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="card" style="margin-bottom: 10px;">
-                <div class="card-body">
-                  <h5 class="card-title">Visit Annies Ice Cream Parlour</h5>
-                  <p class="card-text">Please Visit Site For Opening Hours.</p>
-                  <a href="https://www.facebook.com/anniesbathurst/ " class="btn btn-primary">Visit Site</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Visit We Ride Equestrian</h5>
-                  <p class="card-text">Bookings Are Required</p>
-                  <a href="https://www.werideequestrian.com.au/" class="btn btn-primary">Visit Site</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p>*Opening times may change depending on the time of year.</p>
         </div>
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
