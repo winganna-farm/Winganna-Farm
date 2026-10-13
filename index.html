@@ -1,65 +1,443 @@
 <!DOCTYPE html>
-<!--current-->
+<html lang="en">
+
 <head>
-    <title>Winganna Farmstay Bathurst</title>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Bathurst,Farmstays,Holidays,Winganna">
-    <meta name="description" content="Winganna Farm is a 50 acre property near Bathurst NSW. Built in 1854 this 3brm secluded cottage on our farm stay is where you can enjoy the peacefulness of the country with all the comforts of the modern day and only 20min from Bathurst city center.">
-    <link rel="icon" type="image/x-icon" href="IMG_0069.JPG">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Winganna Farm | Farm Stay</title>
+
+    <meta name="description" content="Escape to Winganna Farm and experience a peaceful country farm stay surrounded by friendly animals, beautiful scenery and unforgettable memories.">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-  <div class="nav-wrapper">
-    <div class="logo-container">
-        <img class="logo" src="IMG_0069.JPG" alt="Logo"><br>
-        <h6 style="padding-left: 20px; font-size: 25px;">Winganna Farm</h6>
-    </div>
-    <nav>
-        <input class="hidden" type="checkbox" id="menuToggle">
-        <label class="menu-btn" for="menuToggle">
-            <div class="menu"></div>
-            <div class="menu"></div>
-            <div class="menu"></div>
-        </label>
-        <div class="nav-container">
-            <ul class="nav-tabs">
-                <li class="nav-tab">Home</li>
-                <a href="summer.html"><li class="nav-tab">Activities In Bathurst</a></li></a>
-                <a href="animals.html"><li class="nav-tab">Our Animals</li></a>
-                <a href="gal.html"><li class="nav-tab">Photo Gallery</li></a>
-                <a href="cottage.html"><li class="nav-tab">Wadella Cottage</li></a>
-                <button  style="width: 150px; height: 5px;" class="button-28" role="button" onclick="window.location.href = 'https://bookdirect.prenohq.com/inst/#home?propertyId=383IjUezalwY5SlFgDJICu6VHyNTc3NiI=&JDRN=Y';">Book Now</button>
-            </ul>
+
+<!-- =========================
+        HEADER
+========================== -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Winganna Farm
+        </a>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="accommodation.html">Accommodation</a></li>
+
+            <li><a href="animals.html">Meet the Animals</a></li>
+
+            <!-- <li><a href="region.html">Explore the Region</a></li> -->
+
+        </ul>
+
+        <a href="https://bookdirect.prenohq.com/inst/#home?propertyId=383IjUezalwY5SlFgDJICu6VHyNTc3NiI=&JDRN=Y" class="book-btn">
+            Book Now
+        </a>
+
+        <div class="mobile-menu">
+            ☰
         </div>
+
     </nav>
-</div>
-  <section class="top">
-    <h1>Winganna Farm Stay</h1>
-    <img src="white-down-arrow-icon-7.jpg" class="down">
-  </section>
-  <section class="display" id="section2">
-    <div class="vid">
-      <iframe width="986" height="657" src="https://www.youtube.com/embed/U5G24yJZW2A" title="Come and explore Winganna Farm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 700px; height: 400px; text-align: center; max-width: 100%;"></iframe>
+
+</header>
+
+
+<!-- =========================
+        HERO
+========================== -->
+
+<section class="hero" style="position:relative;
+
+    height:90vh;
+
+    background-image: url(Images/IMG_843785.png);
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1>Winganna Farm</h1>
+
+        <a href="https://bookdirect.prenohq.com/inst/#home?propertyId=383IjUezalwY5SlFgDJICu6VHyNTc3NiI=&JDRN=Y" class="hero-button">
+            Book Now
+        </a>
+
     </div>
-    <div class="minigal">
-      <h4>Gallery</h4>
-      <img src="IMG_0254.JPG" class="gal1">
-      <img src="IMG_0255.JPG" class="gal2">
-      <br>
-      <img src="IMG_0265.JPG" class="gal3">
-      <img src="IMG_0282.JPG" class="gal4">
-      <br>
-      <p class="viewgal"><a href="gal.html">View Full Gallery</a></p>
-      <br>
-      <br>
-      <br>
+
+    <div class="scroll-indicator">
+
+        <span></span>
+
     </div>
-  </section>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</section>
+
+<!-- ========================================
+     ABOUT PREVIEW
+======================================== -->
+
+<section class="about-preview">
+
+    <div class="about-container">
+
+        <div class="about-image">
+
+            <img src="Images/IMG_5164.jpeg" alt="Winganna Farm">
+
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-subtitle">
+                Welcome
+            </p>
+
+            <h2>About Winganna Farm</h2>
+
+            <p>
+                Winganna Farm is your next family farm getaway. 50 acres of land just 20 minutes from Bathurst CBD.
+                You will stay in a historical cottage as the only guests on the property. You can meet our friendly animals, including goats, chooks, sheep, the pig, the donkey, and many more.
+                The Winburndale Rivulet is a cool spot in the summer, located on the property.
+            </p>
+
+            <a href="about.html" class="btn-outline">
+                Learn More
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================
+     FARM EXPERIENCES PREVIEW
+======================================== -->
+
+<section class="experiences-preview">
+
+    <div class="section-heading">
+
+        <p class="section-subtitle">Experience</p>
+
+        <h2>Life on the Farm</h2>
+
+    </div>
+
+    <div class="experience-grid">
+
+        <div class="experience-card large">
+            <img src="Images/IMG_0266.JPG" alt="River">
+        </div>
+
+        <div class="experience-card">
+            <img src="Images/Attachment.jpeg" alt="Baby Animals">
+        </div>
+
+        <div class="experience-card">
+            <img src="Images/679436.png" alt="Paddock1">
+        </div>
+
+        <div class="experience-card">
+            <img src="Images/IMG_0269 - Copy.JPG" alt="Dam">
+        </div>
+
+        <div class="experience-card">
+            <img src="Images/IMG_1623.jpg" alt="Paddock2">
+        </div>
+
+    </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================
+     ACCOMMODATION PREVIEW
+======================================== -->
+
+<section class="accommodation-preview">
+
+    <div class="accommodation-wrapper">
+
+        <div class="accommodation-content">
+
+            <p class="section-subtitle">
+                Stay
+            </p>
+
+            <h2>Your Country Escape</h2>
+
+            <p>
+                Built in 1854 this 3brm secluded cottage on our farm stay is where you can enjoy the peacefulness of the country with all the comforts of the modern day and only 20min from Bathurst city centre. <br>
+                Relaxing on the wrap around balcony you will hear the sounds of the rivulet below, the birdlife and farm animals which we invite you to come and meet and feed in the afternoons. Inside is everything you need including the comfort of a fireplace or A/C in the summer.
+            </p>
+
+            
+            <a href="accommodation.html" class="btn-solid">
+                View Accommodation
+            </a>
+
+        </div>
+
+        <div class="accommodation-gallery">
+
+            <img src="Images/Screenshot 2023-12-29 174310 (2).png" alt="Living Area" class="large-image">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================
+     MEET THE ANIMALS
+======================================== -->
+
+<section class="animals-preview">
+
+    <div class="section-heading">
+
+        <p class="section-subtitle">Animals</p>
+
+        <h2>Meet Our Animals</h2>
+
+    </div>
+
+    <div class="animal-scroll">
+
+        <div class="animal">
+            <img src="Images/Chooks.JPG" alt="Chickens">
+            <span>Chickens</span>
+        </div>
+
+        <div class="animal">
+            <img src="Images/IMG_1827.JPG" alt="Pig">
+            <span>Pig</span>
+        </div>
+
+        <div class="animal">
+            <img src="Images/New Imags (3).jpeg" alt="Goats">
+            <span>Goats</span>
+        </div>
+
+        <div class="animal">
+            <img src="Images/IMG_0064.JPG" alt="Sheep">
+            <span>Sheep</span>
+        </div>
+
+        <div class="animal">
+            <img src="Images/IMG_0060.JPG" alt="Alpaca & Donkey">
+            <span>Alpacas</span>
+        </div>
+
+        <div class="animal">
+            <img src="Images/IMG_5696.jpeg" alt="Horses">
+            <span>Horses</span>
+        </div>
+
+        <div class="animal">
+            <img src="Images/Rusty.jpeg" alt="Cow (Steer)">
+            <span>Cow</span>
+        </div>
+
+    </div>
+
+    <div class="section-button">
+
+        <a href="animals.html" class="btn-solid">
+            Meet the Animals
+        </a>
+
+    </div>
+
+</section>
+
+<section class="region-preview">
+
+    <div class="container region-container">
+
+        <div class="region-content">
+
+            <p class="section-subtitle">Explore</p>
+
+            <h2>The Surrounding Region</h2>
+
+            <p>
+                Discover the Bathurst region. Visit the local villiages or grab a bite to eat in town. Throughout the year, there are many activities and events in Bathurst.
+            </p>
+
+            <a href="https://www.bathurstregion.com.au/" class="btn-outline">
+                Explore the Region
+            </a>
+
+        </div>
+
+        <div class="region-image">
+
+            <img src="Images/090d1acfb0027d07ee8f87444cb6080a.jpeg" alt="Regional landscape">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================
+     GALLERY PREVIEW
+
+
+<section class="gallery-preview">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-subtitle">Gallery</p>
+
+            <h2>Life at Winganna Farm</h2>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <img src="Images/Screenshot 2023-12-29 174310 (2).png" alt="Farm image 1">
+            <img src="Images/Screenshot 2023-12-29 174310 (2).png" alt="Farm image 2">
+            <img src="Images/Screenshot 2023-12-29 174310 (2).png" alt="Farm image 3">
+            <img src="Images/Screenshot 2023-12-29 174310 (2).png" alt="Farm image 4">
+            <img src="Images/Screenshot 2023-12-29 174310 (2).png" alt="Farm image 5">
+            <img src="Images/Screenshot 2023-12-29 174310 (2).png" alt="Farm image 6">
+
+        </div>
+
+        <div class="section-button">
+
+            <a href="gallery.html" class="btn-solid">
+                View Full Gallery
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+======================================== -->
+
+<!-- ========================================
+     FIND US
+======================================== -->
+
+<section class="find-us">
+
+    <div class="container find-grid">
+
+        <div class="find-info">
+
+            <p class="section-subtitle">Contact</p>
+
+            <h2>Find Us</h2>
+
+            <p>Email: info@winganna.com.au</p>
+            <p>Address: 392 Rivulet Rd, Peel NSW, 2795</p>
+
+            <a href="https://bookdirect.prenohq.com/inst/#home?propertyId=383IjUezalwY5SlFgDJICu6VHyNTc3NiI=&JDRN=Y" class="btn-solid">
+                Book Now
+            </a>
+
+        </div>
+
+        <div class="find-map">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.967638914722!2d149.61341828375905!3d-33.288558099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b0e1dcde3bb4f6b%3A0x2384c6e1c1b8a470!2sWinganna%20Farm!5e1!3m2!1sen!2sau!4v1783478953734!5m2!1sen!2sau"
+                width="100%"
+                height="350"
+                style="border:0;"
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================
+     FOOTER
+======================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <h3>Winganna Farm</h3>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+
+            <a href="about.html">About</a><br>
+            <a href="accommodation.html">Accommodation</a><br>
+            <a href="animals.html">Animals</a><br>
+            <a href="region.html">Region</a>
+        </div>
+
+        <div>
+            <h4>Bookings</h4>
+
+            <p><a href="https://www.airbnb.com.au/rooms/47500330?source_impression_id=p3_1791886947_P3gHm7TNLUEo32Uz">Airbnb</a></p>
+            <p><a href="https://www.booking.com/hotel/au/winganna-farm.en-gb.html?aid=356980&label=mkt123sc-e02fcce6-c8bc-41fb-bf90-a6c1104fc807&sid=ae5d6b1ba210b50460f4d6033d786521&all_sr_blocks=1342730301_406655387_6_1_0&checkin=2026-10-13&checkout=2026-10-14&dest_id=-1594355&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=1342730301_406655387_6_1_0&hpos=1&matching_block_id=1342730301_406655387_6_1_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1342730301_406655387_6_1_0__27500&srepoch=1791886950&srpvid=770548ee57680321&type=total&ucfs=1&">Booking.com</a></p>
+            <p><a href="https://bookdirect.prenohq.com/inst/#home?propertyId=383IjUezalwY5SlFgDJICu6VHyNTc3NiI=&JDRN=Y">Direct Booking</a></p>
+        </div>
+
+        <div class="footer-awards">
+
+            <h4>Awards</h4>
+
+            <img src="Images/Instagram-Stickers-Blue_RA-2026.png" alt="Traveller Review Award">
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© Winganna Farm</p>
+    </div>
+
+</footer>
+
+<script src="main.js"></script>
+
 </body>
+</html>
